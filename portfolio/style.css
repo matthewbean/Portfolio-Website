@@ -1,0 +1,31 @@
+*{
+    /* box-sizing: border-box; */
+    margin:0px;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+}
+nav{
+padding:10px;
+background-color:black;
+position: relative;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding:8px;
+}
+.nav a:hover{
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    transition: .2s;
+}
+.content{
+    padding-top: 40px;
+    height: 2000px;
+}
+.link{
+    margin-top:-38px;
+    display:inline-block;
+}
