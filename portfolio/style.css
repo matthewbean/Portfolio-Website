@@ -1,81 +1,188 @@
 *{
     box-sizing: border-box;
     margin:0px;
+    text-align: center;
+    line-height: 130%;
+    
+}
+
+body{
+    background-color:#628078;
+    font-family: 'Play', sans-serif;
+}
+
+.content{
+    width:90%;
+    margin: 0 auto;
+    
 }
 .nav{
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    background-color:#ff3a22;
+    font-family: 'Major Mono Display', monospace;
 }
+
 nav{
-padding:10px;
-background-color:black;
-position: relative;
+    padding:10px;
+    display: inline-block;
+    position: relative;
 }
+
 .nav a{
     text-decoration: none;
-    color: white;
+    color: black;
     padding:8px;
+    font-size:15px;
+    font-weight: bold;
 }
-.nav a:hover{
-    border-top: solid white 2px;
-    border-bottom: solid white 2px;
-    transition: .2s;
-}
-.content{
-    padding-top: 40px;
-    width:90%;
-    margin: 0 auto;
-    background-color:#fff
+
+.logo{
+    display: none;
+    font-family: 'Orbitron', sans-serif;
 
 
 }
+
 section{
-    min-height: 100vh
+    padding:20px 20px 100px;
+
 }
+
 .link{
     margin-top:-38px;
     display: inline-block;
-    transition: 1s;
 }
-.webApps:last-child{
-    border-bottom: black solid 2px;
-}
-.project{
-border-top:black 2px solid;
 
+#Home{
+    margin-top: -100px;
+}
+
+.project, .certification{
+    border-top:black 2px solid;
+    padding: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1{
+    padding: 10px;
+}
+p{
+    padding: 10px;
+}
+.description{
+    padding: 20px;
+}
+
+.social{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* colors */
+.home{
+    background-color:#a4893d;
+    padding-top: 70px;
+}
+
+.projects{
+    background-color:#c7af6b
+}
+
+.certifications{
+    background-color:#a4893d
+}
+
+.contacts{
+    background-color:#c7af6b
+}
+/* media querries */
+@media only screen and (min-width: 712px){
+*{
+    text-align: left;
+}
+.nav a:hover{
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    transition: .2s;
+}
+.logo{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    right:30px;
+    top: 8px;
+}
+
+.image{
+    text-align: center;
+}
+
+.portrait{
+    width: 624px;
+    text-align: center;
+}
+
+.project, .certification{
 display: grid;
 grid-template-columns: 1fr 4fr;
 grid-template-rows:  1fr;
 }
+
 .label{
 grid-column: 1/2;
 grid-row:1/2;
 justify-self: center;
 }
+
 .ref{
 grid-column: 1/2;
 grid-row:1/1;
 justify-self: center;
 }
+
 .description{
 grid-column: 2/2;
 grid-row:1;
 align-self: start;
 margin-top: 16px;
+padding: 0;
 }
+
 .expand{
+    max-width: 180px;
     margin: 20px;
     transition: .4s;
     
 }
+
 .expand:hover{
-    height:300px;
+    max-width:350px;
     transition: .4s;
     
 }
-.inline{
-    display: inline-block;
+
+.accounts{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.bold{
-    font-weight: bold;
+}
+
+@media only screen and (min-width: 1000px){
+    .expand:hover{
+        max-width:500px;
+    }
 }
